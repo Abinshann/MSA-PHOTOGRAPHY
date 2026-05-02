@@ -7,9 +7,9 @@ export const siteConfig = {
   name: 'Muhammed Sultan Ali',
   shortName: 'MSA',
   tagline: 'Visual Storyteller',
-  location: 'Based in Dubai, creating worldwide.',
-  email: 'hello@muhammedsultanali.com',
-  instagram: 'https://instagram.com',
+  location: 'Based in Abu Dhabi, creating worldwide.',
+  email: 'muhammedsultanaliuae@gmail.com',
+  instagram: 'https://www.instagram.com/abinnshan/',
   instagramHandle: '@muhammedsultanali',
   whatsapp: 'https://wa.me/+971542440221',
   whatsappNumber: '+971 54 244 0221',
@@ -167,6 +167,13 @@ export const portfolioItems = [
     title: 'Beach Vibe',
     location: 'Abu Dhabi, UAE',
   },
+  {
+    id: 13,
+    category: 'Portraits',
+    image: 'https://res.cloudinary.com/dbbzmkzhd/image/upload/q_auto/f_auto/v1777703944/DSCF4253.JPG_iemtjh.jpg',
+    title: 'b&w',
+    location: 'Dubai, UAE',
+  },
 
 ]
 
@@ -179,11 +186,11 @@ export const aboutContent = {
     'I am a visual storyteller with a passion for capturing the raw, unscripted moments that define our human experience. Through my lens, I seek to find the extraordinary within the ordinary.',
     "With over a decade of experience across weddings, portraits, and documentary work, I've developed a cinematic approach that blends artistry with authenticity. Every frame is an opportunity to preserve a feeling, a connection, a story.",
   ],
-  location: 'Based in Dubai, creating worldwide.',
+  location: 'Based in Abu Dhabi, creating worldwide.',
   stats: [
-    { number: '10+', label: 'Years' },
-    { number: '500+', label: 'Projects' },
-    { number: '30+', label: 'Countries' },
+    { number: '1+', label: 'Years' },
+    { number: '2+', label: 'Projects' },
+    { number: '2+', label: 'Countries' },
   ],
 }
 

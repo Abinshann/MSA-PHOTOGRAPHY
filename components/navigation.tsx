@@ -32,11 +32,10 @@ export default function Navigation() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? 'bg-background/90 backdrop-blur-md border-b border-border/30'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+          ? 'bg-background/90 backdrop-blur-md border-b border-border/30'
+          : 'bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -91,23 +90,21 @@ export default function Navigation() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg md:hidden"
+            className="fixed top-0 left-0 w-[100vw] h-[100dvh] z-40 bg-background/98 backdrop-blur-lg md:hidden flex flex-col items-center justify-center gap-8"
           >
-            <div className="flex flex-col items-center justify-center h-full gap-8">
-              {navLinks.map((link, index) => (
-                <motion.button
-                  key={link.name}
-                  onClick={() => scrollToSection(link.href)}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 30 }}
-                  transition={{ delay: 0.1 * index, duration: 0.4 }}
-                  className="text-2xl font-[var(--font-playfair)] tracking-wider text-foreground hover:text-accent transition-colors duration-300"
-                >
-                  {link.name}
-                </motion.button>
-              ))}
-            </div>
+            {navLinks.map((link, index) => (
+              <motion.button
+                key={link.name}
+                onClick={() => scrollToSection(link.href)}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 30 }}
+                transition={{ delay: 0.1 * index, duration: 0.4 }}
+                className="text-2xl font-[var(--font-playfair)] tracking-wider text-foreground hover:text-accent transition-colors duration-300"
+              >
+                {link.name}
+              </motion.button>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>

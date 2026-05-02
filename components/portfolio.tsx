@@ -13,9 +13,9 @@ export default function Portfolio() {
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' })
 
   const filteredItems =
-  activeCategory === 'All'
-    ? portfolioItems.slice(0, 12)
-    : portfolioItems
+    activeCategory === 'All'
+      ? portfolioItems.slice(0, 12)
+      : portfolioItems
         .filter((item) => item.category === activeCategory)
         .slice(0, 12);
 
@@ -77,11 +77,10 @@ export default function Portfolio() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`md:px-6 md:py-2 px:3 py-1 text-xs tracking-widest uppercase transition-all duration-300 border ${
-                activeCategory === category
-                  ? 'border-accent text-accent'
-                  : 'border-border text-muted-foreground hover:border-accent/50 hover:text-foreground'
-              }`}
+              className={`md:px-6 md:py-2 px:3 py-1 text-xs tracking-widest uppercase transition-all duration-300 border ${activeCategory === category
+                ? 'border-accent text-accent'
+                : 'border-border text-muted-foreground hover:border-accent/50 hover:text-foreground'
+                }`}
             >
               {category}
             </button>
@@ -135,7 +134,7 @@ export default function Portfolio() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+            className="fixed top-0 left-0 w-[100vw] h-[100dvh] z-50 bg-black/95 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >
             {/* Close Button */}
