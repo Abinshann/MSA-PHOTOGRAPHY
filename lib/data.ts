@@ -106,9 +106,9 @@ export const portfolioItems = [
   },
   {
     id: 4,
-    category: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1777126091777-90f400886717?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Friendship',
+    category: 'Animal',
+    image: 'https://images.unsplash.com/photo-1776962928364-faaaaaefe03b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Cat',
     location: 'Abu Dhabi, UAE',
   },
   {
@@ -127,10 +127,10 @@ export const portfolioItems = [
   },
   {
     id: 7,
-    category: 'Travel',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
-    title: 'Mountain Serenity',
-    location: 'Norway',
+    category: 'Portraits',
+    image: 'https://res.cloudinary.com/dbbzmkzhd/image/upload/q_auto/f_auto/v1777703944/DSCF4253.JPG_iemtjh.jpg',
+    title: 'Morning',
+    location: 'Dubai, UAE',
   },
   {
     id: 8,
@@ -155,10 +155,10 @@ export const portfolioItems = [
   },
   {
     id: 11,
-    category: 'Animal',
-    image: 'https://images.unsplash.com/photo-1776962928364-faaaaaefe03b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Cat',
-    location: 'Abu Dhabi, UAE',
+    category: 'Travel',
+    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    title: 'Mountain Serenity',
+    location: 'Kerala',
   },
   {
     id: 12,
@@ -169,12 +169,11 @@ export const portfolioItems = [
   },
   {
     id: 13,
-    category: 'Portraits',
-    image: 'https://res.cloudinary.com/dbbzmkzhd/image/upload/q_auto/f_auto/v1777703944/DSCF4253.JPG_iemtjh.jpg',
-    title: 'b&w',
-    location: 'Dubai, UAE',
+    category: 'Lifestyle',
+    image: 'https://images.unsplash.com/photo-1777126091777-90f400886717?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Friendship',
+    location: 'Abu Dhabi, UAE',
   },
-
 ]
 
 // ─── ABOUT SECTION ────────────────────────────────────────────
